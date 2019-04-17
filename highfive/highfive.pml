@@ -2,10 +2,13 @@
 <Package name="highfive" format_version="4">
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
-        <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="highfive" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="." xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
-    <Resources />
+    <Resources>
+        <File name="choice_sentences" src="Aldebaran/choice_sentences.xml" />
+    </Resources>
     <Topics />
     <IgnoredPaths />
 </Package>
