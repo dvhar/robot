@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3">
+    <Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0">
+        <bitmap>media/images/box/root.png</bitmap>
+        <script language="4">
+            <content>
+                <![CDATA[]]>
+</content>
+        </script>
+        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+        <Timeline enable="0">
+            <BehaviorLayer name="behavior_layer1">
+                <BehaviorKeyframe name="keyframe1" index="1">
+                    <Diagram scale="70.7107">
+                        <Box name="Speech Reco." id="1" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="143" y="103">
+                            <bitmap>media/images/box/interaction/ear.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[names=['emma','olivia','ava','isabella','sophia','mia','charlotte','amelia','evelyn',
+'abigail','harper','emily','elizabeth','avery','sofia','ella','madison','scarlett',
+'victoria','aria','grace','chloe','camila','penelope','riley','layla','lillian',
+'nora','zoey','mila','aubrey','hannah','lily','addison','eleanor','natalie',
+'luna','savannah','brooklyn','leah','zoe','stella','hazel','ellie','paisley',
+'audrey','skylar','violet','claire','bella','aurora','lucy','anna','samantha',
+'caroline','genesis','aaliyah','kennedy','kinsley','allison','maya','sarah','madelyn',
+'adeline','alexa','ariana','elena','gabriella','naomi','alice','sadie','hailey',
+'eva','emilia','autumn','quinn','nevaeh','piper','ruby','serenity','willow',
+'everly','cora','kaylee','lydia','aubree','arianna','eliana','peyton','melanie',
+'gianna','isabelle','julia','valentina','nova','clara','vivian','reagan','mackenzie',
+'madeline','brielle','delilah','isla','rylee','katherine','sophie','josephine','ivy',
+'liliana','jade','maria','taylor','hadley','kylie','emery','adalynn','natalia',
+'annabelle','faith','alexandra','ximena','ashley','brianna','raelynn','bailey','mary',
+'athena','andrea','leilani','jasmine','lyla','margaret','alyssa','adalyn','arya',
+'norah','khloe','kayla','eden','eliza','rose','ariel','melody','alexis',
+'isabel','sydney','juliana','lauren','iris','emerson','london','morgan','lilly',
+'charlie','aliyah','valeria','arabella','sara','finley','trinity','ryleigh','jordyn',
+'jocelyn','kimberly','esther','molly','valerie','cecilia','anastasia','daisy','reese',
+'laila','mya','amy','teagan','amaya','elise','harmony','paige','adaline',
+'fiona','alaina','nicole','genevieve','lucia','alina','mckenzie','callie','payton',
+'eloise','brooke','londyn','mariah','julianna','rachel','daniela','gracie','catherine',
+'angelina','presley','josie','harley','adelyn','vanessa','makayla','parker','juliette',
+'amara','marley','lila','ana','rowan','alana','michelle','malia','rebecca',
+'brooklynn','brynlee','summer','sloane','leila','sienna','adriana','sawyer','kendall',
+'juliet','destiny','alayna','elliana','diana','hayden','ayla','dakota','angela',
+'noelle','rosalie','joanna','jayla','alivia','lola','emersyn','georgia','selena',
+'june','daleyza','tessa','maggie','jessica','remi','delaney','camille','vivienne',
+'hope','mckenna','gemma','olive','alexandria','blakely','izabella','catalina','raegan',
+'journee','gabrielle','lucille','ruth','amiyah','evangeline','blake','thea','amina',
+'giselle','lilah','melissa','river','kate','adelaide','charlee','vera','leia',
+'gabriela','zara','jane','journey','elaina','miriam','briella','stephanie','cali',
+'ember','lilliana','aniyah','logan','kamila','brynn','ariella','makenzie','annie',
+'mariana','kali','haven','elsie','nyla','paris','lena','freya','adelynn',
+'lyric','camilla','sage','jennifer','paislee','talia','alessandra','juniper','fatima',
+'raelyn','amira','arielle','phoebe','kinley','ada','nina','ariah','samara',
+'myla','brinley','cassidy','maci','aspen','allie','keira','kaia','makenna',
+'amanda','heaven','joy','lia','madilyn','gracelyn','laura','evelynn','lexi',
+'haley','miranda','kaitlyn','daniella','felicity','jacqueline','evie','angel','danielle',
+'ainsley','dylan','kiara','millie','jordan','maddison','rylie','alicia','maeve',
+'margot','kylee','phoenix','heidi','zuri','alondra','lana','madeleine','gracelynn',
+'kenzie','miracle','shelby','elle','adrianna','bianca','addilyn','kira','veronica',
+'gwendolyn','esmeralda','chelsea','alison','skyler','magnolia','daphne','jenna','everleigh',
+'kyla','braelynn','harlow','annalise','mikayla','dahlia','maliyah','averie','scarlet',
+'kayleigh','luciana','kelsey','nadia','amber','gia','kamryn','yaretzi','carmen',
+'jimena','erin','christina','katie','ryan','viviana','alexia','anaya','serena',
+'katelyn','ophelia','regina','helen','remington','camryn','cadence','royalty','amari',
+'kathryn','skye','emely','jada','ariyah','aylin','saylor','kendra','cheyenne',
+'fernanda','sabrina','francesca','eve','mckinley','frances','sarai','carolina','kennedi',
+'nylah','tatum','alani','lennon','raven','zariah','leslie','winter','abby',
+'mabel','sierra','april','willa','carly','jolene','rosemary','aviana','madelynn',
+'selah','renata','lorelei','briana','celeste','wren','charleigh','leighton','annabella',
+'jayleen','braelyn','ashlyn','jazlyn','mira','oakley','malaysia','edith','avianna',
+'maryam','emmalyn','hattie','kensley','macie','bristol','marlee','demi','cataleya',
+'maia','sylvia','itzel','allyson','lilith','melany','kaydence','holly','nayeli',
+'meredith','nia','liana','megan','justice','bethany','alejandra','janelle','elisa',
+'adelina','ashlynn','elianna','aleah','myra','lainey','blair','kassidy','charley',
+'virginia','kara','helena','sasha','julie','michaela','carter','matilda','kehlani',
+'henley','maisie','hallie','jazmin','priscilla','marilyn','cecelia','danna','colette',
+'baylee','elliott','ivanna','cameron','celine','alayah','hanna','imani','angelica',
+'emelia','kalani','alanna','lorelai','macy','karina','addyson','aleena','aisha',
+'johanna','mallory','leona','mariam','kynlee','madilynn','karen','karla','skyla',
+'beatrice','dayana','gloria','milani','savanna','karsyn','rory','giuliana','lauryn',
+'liberty','galilea','aubrie','charli','kyleigh','brylee','jillian','anne','haylee',
+'dallas','azalea','jayda','tiffany','avah','shiloh','bailee','jazmine','esme',
+'coraline','madisyn','elaine','lilian','kyra','kaliyah','kora','octavia','irene',
+'kelly','lacey','laurel','adley','anika','janiyah','dorothy','sutton','julieta',
+'kimber','remy','cassandra','rebekah','collins','elliot','emmy','sloan','hayley',
+'amalia','jemma','jamie','melina','leyla','jaylah','anahi','jaliyah','kailani',
+'harlee','wynter','saige','alessia','monica','anya','antonella','emberly','khaleesi',
+'ivory','greta','maren','alena','emory','alaia','cynthia','addisyn','alia',
+'lylah','angie','ariya','alma','crystal','jayde','aileen','kinslee','siena',
+'zelda','katalina','marie','pearl','reyna','mae','zahra','kailey','jessie',
+'tiana','amirah','madalyn','alaya','lilyana','julissa','armani','lennox','lillie',
+'jolie','laney','roselyn','mara','joelle','rosa','kaylani','bridget','liv',
+'oaklyn','aurelia','clarissa','elyse','marissa','monroe','kori','elsa','rosie',
+'amelie','aitana','aliza','eileen','poppy','emmie','braylee','milana','addilynn',
+'royal','chaya','frida','bonnie','amora','stevie','tatiana','malaya','mina',
+'emerie','reign','zaylee','annika','kenia','linda','kenna','faye','reina',
+'brittany','marina','astrid','kadence','mikaela','jaelyn','briar','kaylie','teresa',
+'bria','hadassah','lilianna','guadalupe','rayna','chanel','lyra','noa','zariyah',
+'laylah','aubrielle','aniya','livia','ellen','meadow','amiya','ellis','elora',
+'milan','hunter','princess','leanna','nathalie','clementine','nola','tenley','simone',
+'lina','marianna','martha','sariah','louisa','noemi','emmeline','kenley','belen',
+'erika','myah','lara','amani','ansley','everlee','maleah','salma','jaelynn',
+'kiera','dulce','nala','natasha','averi','mercy','penny','ariadne','deborah',
+'elisabeth','zaria','hana','kairi','yareli','raina','ryann','lexie','thalia',
+'karter','annabel','christine','estella','keyla','adele','aya','estelle','landry',
+'tori','perla','lailah','miah','rylan','angelique','avalynn','romina','ari',
+'jaycee','jaylene','kai','louise','mavis','scarlette','belle','lea','nalani',
+'rivka','ayleen','calliope','dalary','zaniyah','kaelyn','sky','jewel','joselyn',
+'madalynn','paola','giovanna','isabela','karlee','aubriella','azariah','tinley','dream',
+'claudia','corinne','erica','milena','aliana','kallie','alyson','joyce','tinsley',
+'whitney','emilee','paisleigh','carolyn','jaylee','zoie','frankie','andi','judith',
+'paula','xiomara','aiyana','amia','analia','audrina','hadlee','rayne','amayah',
+'cara','celia','lyanna','opal','amaris','clare','gwen','giana','veda',
+'alisha','davina','rhea','sariyah','noor','danica','kathleen','lillianna','lindsey',
+'maxine','paulina','hailee','harleigh','nancy','jessa','raquel','raylee','zainab',
+'chana','lisa','heavenly','oaklynn','aminah','emmalynn','patricia','india','janessa',
+'paloma','ramona','sandra','abril','emmaline','itzayana','kassandra','vienna','marleigh',
+'kailyn','novalee','rosalyn','hadleigh','luella','taliyah','avalyn','barbara','iliana',
+'jana','meilani','aadhya','alannah','blaire','brenda','casey','selene','lizbeth',
+'adrienne','annalee','malani','aliya','miley','nataly','bexley','joslyn','maliah',
+'zion','breanna','melania','estrella','ingrid','jayden','kaya','kaylin','harmoni',
+'arely','jazlynn','kiana','dana','mylah','oaklee','ailani','kailee','legacy',
+'marjorie','paityn','courtney','ellianna','jurnee','karlie','evalyn','holland','kenya',
+'magdalena','carla','halle','aryanna','kaiya','kimora','naya','saoirse','susan',
+'desiree','ensley','renee','esperanza','treasure','caylee','ellison','kristina','adilynn',
+'anabelle','egypt','spencer','tegan','aranza','vada','emerald','florence','marlowe',
+'micah','sonia','sunny','tara','riya','yara','alisa','nathalia','yamileth',
+'saanvi','samira','sylvie','brenna','carlee','jenny','miya','monserrat','zendaya',
+'alora','liam','noah','william','james','logan','benjamin','mason','elijah',
+'oliver','jacob','lucas','michael','alexander','ethan','daniel','matthew','aiden',
+'henry','joseph','jackson','samuel','sebastian','david','carter','wyatt','jayden',
+'john','owen','dylan','luke','gabriel','anthony','isaac','grayson','jack',
+'julian','levi','christopher','joshua','andrew','lincoln','mateo','ryan','jaxon',
+'nathan','aaron','isaiah','thomas','charles','caleb','josiah','christian','hunter',
+'eli','jonathan','connor','landon','adrian','asher','cameron','leo','theodore',
+'jeremiah','hudson','robert','easton','nolan','nicholas','ezra','colton','angel',
+'brayden','jordan','dominic','austin','ian','adam','elias','jaxson','greyson',
+'jose','ezekiel','carson','evan','maverick','bryson','jace','cooper','xavier',
+'parker','roman','jason','santiago','chase','sawyer','gavin','leonardo','kayden',
+'ayden','jameson','kevin','bentley','zachary','everett','axel','tyler','micah',
+'vincent','weston','miles','wesley','nathaniel','harrison','brandon','cole','declan',
+'luis','braxton','damian','silas','tristan','ryder','bennett','george','emmett',
+'justin','kai','max','diego','luca','ryker','carlos','maxwell','kingston',
+'ivan','maddox','juan','ashton','jayce','rowan','kaiden','giovanni','eric',
+'jesus','calvin','abel','king','camden','amir','blake','alex','brody',
+'malachi','emmanuel','jonah','beau','jude','antonio','alan','elliott','elliot',
+'waylon','xander','timothy','victor','bryce','finn','brantley','edward','abraham',
+'patrick','grant','karter','hayden','richard','miguel','joel','gael','tucker',
+'rhett','avery','steven','graham','kaleb','jasper','jesse','matteo','dean',
+'zayden','preston','august','oscar','jeremy','alejandro','marcus','dawson','lorenzo',
+'messiah','zion','maximus','river','zane','mark','brooks','nicolas','paxton',
+'judah','emiliano','kaden','bryan','kyle','myles','peter','charlie','kyrie',
+'thiago','brian','kenneth','andres','lukas','aidan','jax','caden','milo',
+'paul','beckett','brady','colin','omar','bradley','javier','knox','jaden',
+'barrett','israel','matias','jorge','zander','derek','josue','cayden','holden',
+'griffin','arthur','leon','felix','remington','jake','killian','clayton','sean',
+'adriel','riley','archer','legend','erick','enzo','corbin','francisco','dallas',
+'emilio','gunner','simon','andre','walter','damien','chance','phoenix','colt',
+'tanner','stephen','kameron','tobias','manuel','amari','emerson','louis','cody',
+'finley','iker','martin','rafael','nash','beckham','cash','karson','rylan',
+'reid','theo','ace','eduardo','spencer','raymond','maximiliano','anderson','ronan',
+'lane','cristian','titus','travis','jett','ricardo','bodhi','gideon','jaiden',
+'fernando','mario','conor','keegan','ali','cesar','ellis','jayceon','walker',
+'cohen','arlo','hector','dante','kyler','garrett','donovan','seth','jeffrey',
+'tyson','jase','desmond','caiden','gage','atlas','major','devin','edwin',
+'angelo','orion','conner','julius','marco','jensen','daxton','peyton','zayn',
+'collin','jaylen','dakota','prince','johnny','kayson','cruz','hendrix','atticus',
+'troy','kane','edgar','sergio','kash','marshall','johnathan','romeo','shane',
+'warren','joaquin','wade','leonel','trevor','dominick','muhammad','erik','odin',
+'quinn','jaxton','dalton','nehemiah','frank','grady','gregory','andy','solomon',
+'malik','rory','clark','reed','harvey','zayne','jay','jared','noel',
+'shawn','fabian','ibrahim','adonis','ismael','pedro','leland','malakai','malcolm',
+'alexis','kason','porter','sullivan','raiden','allen','ari','russell','princeton',
+'winston','kendrick','roberto','lennox','hayes','finnegan','nasir','kade','nico',
+'emanuel','landen','moises','ruben','hugo','abram','adan','khalil','zaiden',
+'augustus','marcos','philip','phillip','cyrus','esteban','braylen','albert','bruce',
+'kamden','lawson','jamison','sterling','damon','gunnar','kyson','luka','franklin',
+'ezequiel','pablo','derrick','zachariah','cade','jonas','dexter','kolton','remy',
+'hank','tate','trenton','kian','drew','mohamed','dax','rocco','bowen',
+'mathias','ronald','francis','matthias','milan','maximilian','royce','skyler','corey',
+'kasen','drake','gerardo','jayson','sage','braylon','benson','moses','alijah',
+'rhys','otto','oakley','armando','jaime','nixon','saul','scott','brycen',
+'ariel','enrique','donald','chandler','asa','eden','davis','keith','frederick',
+'rowen','lawrence','leonidas','aden','julio','darius','johan','deacon','cason',
+'danny','nikolai','taylor','alec','royal','armani','kieran','luciano','omari',
+'rodrigo','arjun','ahmed','brendan','cullen','raul','raphael','ronin','brock',
+'pierce','alonzo','casey','dillon','uriel','dustin','gianni','roland','landyn',
+'kobe','dorian','emmitt','ryland','apollo','aarav','roy','duke','quentin',
+'sam','lewis','tony','uriah','dennis','moshe','isaias','braden','quinton',
+'cannon','ayaan','mathew','kellan','niko','edison','izaiah','jerry','gustavo',
+'jamari','marvin','mauricio','ahmad','mohammad','justice','trey','elian','mohammed',
+'sincere','yusuf','arturo','callen','rayan','keaton','wilder','mekhi','memphis',
+'cayson','conrad','kaison','kyree','soren','colby','bryant','lucian','alfredo',
+'cassius','marcelo','nikolas','brennan','darren','jasiah','jimmy','lionel','reece',
+'ty','chris','forrest','korbin','tatum','jalen','santino','case','leonard',
+'alvin','issac','bo','quincy','mack','samson','rex','alberto','callum',
+'curtis','hezekiah','finnley','briggs','kamari','zeke','raylan','neil','titan',
+'julien','kellen','devon','kylan','roger','axton','carl','douglas','larry',
+'crosby','fletcher','makai','nelson','hamza','lance','alden','gary','wilson',
+'alessandro','ares','kashton','bruno','jakob','stetson','zain','cairo','nathanael',
+'byron','harry','harley','mitchell','maurice','orlando','kingsley','kaysen','sylas',
+'trent','ramon','boston','lucca','noe','jagger','reyansh','vihaan','randy',
+'thaddeus','lennon','kannon','kohen','tristen','valentino','maxton','salvador','abdiel',
+'langston','rohan','kristopher','yosef','rayden','lee','callan','tripp','deandre',
+'joe','morgan','dariel','colten','reese','jedidiah','ricky','bronson','terry',
+'eddie','jefferson','lachlan','layne','clay','madden','jamir','tomas','kareem',
+'stanley','brayan','amos','kase','kristian','clyde','ernesto','tommy','casen',
+'ford','crew','braydon','brecken','hassan','axl','boone','leandro','samir',
+'jaziel','magnus','abdullah','yousef','branson','jadiel','jaxen','layton','franco',
+'ben','grey','kelvin','chaim','demetrius','blaine','ridge','colson','melvin',
+'anakin','aryan','lochlan','jon','canaan','dash','zechariah','alonso','otis',
+'zaire','marcel','brett','stefan','aldo','jeffery','baylor','talon','dominik',
+'flynn','carmelo','dane','jamal','kole','enoch','graysen','kye','vicente',
+'fisher','ray','fox','jamie','rey','zaid','allan','emery','gannon',
+'joziah','rodney','juelz','sonny','terrance','zyaire','augustine','cory','felipe',
+'aron','jacoby','harlan','marc','bobby','joey','anson','huxley','marlon',
+'anders','guillermo','payton','castiel','damari','shepherd','azariah','harold','harper',
+'henrik','houston','kairo','willie','elisha','ameer','emory','skylar','sutton',
+'alfonso','brentley','toby','blaze','eugene','shiloh','wayne','darian','gordon',
+'london','bodie','jordy','jermaine','denver','gerald','merrick','musa','vincenzo',
+'kody','yahir','brodie','trace','darwin','tadeo','bentlee','billy','hugh',
+'reginald','vance','westin','cain','arian','dayton','javion','terrence','brysen',
+'jaxxon','thatcher','landry','rene','westley','miller','alvaro','cristiano','eliseo',
+'ephraim','adrien','jerome','khalid','aydin','mayson','alfred','duncan','junior',
+'kendall','zavier','koda','maison','caspian','maxim','kace','zackary','rudy',
+'coleman','keagan','kolten','maximo','dario','davion','kalel','briar','jairo',
+'misael','rogelio','terrell','heath','micheal','wesson','aaden','brixton','draven',
+'xzavier','darrell','keanu','ronnie','konnor','will','dangelo','frankie','kamryn',
+'salvatore','santana','shaun','coen','leighton','mustafa','reuben','ayan','blaise',
+'dimitri','keenan','van','achilles','channing','ishaan','wells','benton','lamar',
+'nova','yahya','dilan','gibson','camdyn','ulises','alexzander','valentin','shepard',
+'alistair','eason','kaiser','leroy','zayd','camilo','markus','foster','davian',
+'dwayne','jabari','judson','koa','yehuda','lyric','tristian','agustin','bridger',
+'vivaan','brayson','emmet','marley','mike','nickolas','kenny','leif','bjorn',
+'ignacio','rocky','chad','gatlin','greysen','kyng','randall','reign','vaughn',
+'jessie','louie','shmuel','zahir','ernest','javon','khari','reagan','avi',
+'ira','ledger','simeon','yadiel','maddux','seamus','jad','jeremias','kylen',
+'rashad','santos','cedric','craig','dominique','gianluca','jovanni','bishop','brenden',
+'anton','camron','giancarlo','lyle','alaric','decker','eliezer','ramiro','yisroel']
+
+
+
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        try:
+            self.asr = ALProxy("ALSpeechRecognition")
+        except Exception as e:
+            self.asr = None
+            self.logger.error(e)
+        self.memory = ALProxy("ALMemory")
+
+    def onLoad(self):
+        from threading import Lock
+        self.bIsRunning = False
+        self.mutex = Lock()
+        self.hasPushed = False
+        self.hasSubscribed = False
+        self.BIND_PYTHON(self.getName(), "onWordRecognized")
+
+    def onUnload(self):
+        from threading import Lock
+        self.mutex.acquire()
+        try:
+            if (self.bIsRunning):
+                if (self.hasSubscribed):
+                    self.memory.unsubscribeToEvent("WordRecognized", self.getName())
+                if (self.hasPushed and self.asr):
+                    self.asr.popContexts()
+        except RuntimeError, e:
+            self.mutex.release()
+            raise e
+        self.bIsRunning = False;
+        self.mutex.release()
+
+    def onInput_onStart(self):
+        from threading import Lock
+        self.mutex.acquire()
+        if(self.bIsRunning):
+            self.mutex.release()
+            return
+        self.bIsRunning = True
+        try:
+            if self.asr:
+                self.asr.setVisualExpression(self.getParameter("Visual expression"))
+                self.asr.pushContexts()
+            self.hasPushed = True
+            if self.asr:
+                self.asr.setVocabulary( names, self.getParameter("Enable word spotting") )
+            self.memory.subscribeToEvent("WordRecognized", self.getName(), "onWordRecognized")
+            self.hasSubscribed = True
+        except RuntimeError, e:
+            self.mutex.release()
+            self.onUnload()
+            raise e
+        self.mutex.release()
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()
+
+    def onWordRecognized(self, key, value, message):
+        if(len(value) > 1 and value[1] >= self.getParameter("Confidence threshold (%)")/100.):
+            self.wordRecognized(value[0]) #~ activate output of the box
+        else:
+            self.onNothing()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                            <Output name="wordRecognized" type="3" type_size="1" nature="2" inner="0" tooltip="Word recognized with a confidence higher than the threshold set in the box parameters." id="5" />
+                            <Output name="onNothing" type="1" type_size="1" nature="2" inner="0" tooltip="Nothing has been understood." id="6" />
+                            <Parameter name="Word list" inherits_from_parent="0" content_type="3" value="andrew" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="7" />
+                            <Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="30" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="8" />
+                            <Parameter name="Visual expression" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="Use the LEDs to show feedbacks from the robot during the recognition.&#x0A;&#x0A;For example:&#x0A;- Eyes leds get blue and turn when the speech recognition is launched.&#x0A;- They get yellow when the robot hears someone talking and analyses what it heard.&#x0A;- They flash in green when the robot understood and flash in red otherwise." id="9" />
+                            <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" />
+                            <Resource name="Speech recognition" type="Lock" timeout="0" />
+                        </Box>
+                        <Box name="Say" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="316" y="214">
+                            <bitmap>media/images/box/interaction/say.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" />
+                            <Parameter name="Voice shaping (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean.' id="5" />
+                            <Parameter name="Speed (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean." id="6" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Say Text" id="2" localization="8" tooltip="Say the text received on its input." x="422" y="65">
+                                                <bitmap>media/images/box/interaction/say.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.tts = ALProxy('ALTextToSpeech')
+        self.ttsStop = ALProxy('ALTextToSpeech', True) #Create another proxy as wait is blocking if audioout is remote
+
+    def onLoad(self):
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.post.say(str(sentence))
+            self.ids.append(id)
+            self.tts.wait(id, 0)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                                <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                                <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                            </Box>
+                                            <Box name="Localized Text" id="5" localization="8" tooltip="Send on the output the text associated with the robot&apos;s current voice language.&#x0A;You can display and edit the text associated with any language by&#x0A;selecting the language in the combobox.&#x0A;&#x0A;!!Warning!! The text sent on the output is NOT the displayed one but the one&#x0A;associated with the robot&apos;s current voice language." plugin="localizationbox_plugin" x="114" y="68">
+                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+			GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+			GeneratedClass.__init__( self )
+
+		self.tts = ALProxy("ALTextToSpeech")
+		self.sentences = {
+			"Arabic" : "  ",
+			"Czech" : " Ahoj ",
+			"Danish" : " Hej ",
+			"German" : " Hallo ",
+			"Greek" : "  ",
+			"English" : " Hello human, I did not understand your name. Try again ",
+			"Spanish" : " Hola ",
+			"Finnish" : " Hei ",
+			"French" : " Bonjour ",
+			"Italian" : " Ciao ",
+			"Japanese" : " こんにちは ",
+			"Korean" : " 안녕하세요 ",
+			"Dutch" : " Hallo ",
+			"Norwegian" : "  ",
+			"Polish" : " Cześć ",
+			"Brazilian" : " Olá ",
+			"Portuguese" : " Olá ",
+			"Russian" : " Привет ",
+			"Swedish" : " Hallå ",
+			"Turkish" : " Merhaba ",
+			"Chinese" : "  "
+		}
+
+	def onInput_onStart(self):
+		sDefaultLang = self.tts.getLanguage()
+		self.onStopped(self.sentences[sDefaultLang])]]>
+</content>
+                                                </script>
+                                                <pluginContent>
+                                                    <arabic>
+                                                        <![CDATA[]]>
+</arabic>
+                                                    <czech>
+                                                        <![CDATA[Ahoj]]>
+</czech>
+                                                    <danish>
+                                                        <![CDATA[Hej]]>
+</danish>
+                                                    <german>
+                                                        <![CDATA[Hallo]]>
+</german>
+                                                    <greek>
+                                                        <![CDATA[]]>
+</greek>
+                                                    <english>
+                                                        <![CDATA[Hello human, I did not understand your name. Try again]]>
+</english>
+                                                    <spanish>
+                                                        <![CDATA[Hola]]>
+</spanish>
+                                                    <finnish>
+                                                        <![CDATA[Hei]]>
+</finnish>
+                                                    <french>
+                                                        <![CDATA[Bonjour]]>
+</french>
+                                                    <italian>
+                                                        <![CDATA[Ciao]]>
+</italian>
+                                                    <japanese>
+                                                        <![CDATA[こんにちは]]>
+</japanese>
+                                                    <korean>
+                                                        <![CDATA[안녕하세요]]>
+</korean>
+                                                    <dutch>
+                                                        <![CDATA[Hallo]]>
+</dutch>
+                                                    <norwegian>
+                                                        <![CDATA[]]>
+</norwegian>
+                                                    <polish>
+                                                        <![CDATA[Cześć]]>
+</polish>
+                                                    <brazilian>
+                                                        <![CDATA[Olá]]>
+</brazilian>
+                                                    <portuguese>
+                                                        <![CDATA[Olá]]>
+</portuguese>
+                                                    <russian>
+                                                        <![CDATA[Привет]]>
+</russian>
+                                                    <swedish>
+                                                        <![CDATA[Hallå]]>
+</swedish>
+                                                    <turkish>
+                                                        <![CDATA[Merhaba]]>
+</turkish>
+                                                    <chinese>
+                                                        <![CDATA[]]>
+</chinese>
+                                                    <language>7</language>
+                                                </pluginContent>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
+                                                <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Data sent when asked." id="3" />
+                                            </Box>
+                                            <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
+                                            <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                            <Link inputowner="2" indexofinput="2" outputowner="5" indexofoutput="3" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                            <Resource name="Speech" type="Lock" timeout="0" />
+                        </Box>
+                        <Box name="Face Reco." id="9" localization="8" tooltip="Detect people&apos;s face and recognize those which are known by the robot.&#x0A;&#x0A;Note: the robot needs to learn a face with the Learn Face box before he can recognize it." x="247" y="620">
+                            <bitmap>media/images/box/interaction/reco_face.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Input name="FaceDetected" type="0" type_size="1" nature="4" stm_value_name="FaceDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
+                            <Output name="onRecognizedFaces" type="3" type_size="1" nature="2" inner="0" tooltip="Names of recognized faces. If several faces are recognized, they are sent one&#x0A;after an other on this output." id="6" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Reco. Det. Faces" id="1" localization="8" tooltip="Process face detection extractor data (FaceDetected) to extract the labels of&#x0A;recognized faces and notify when there is a face detected but not recognized.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the number of&#x0A;recognized faces change." x="183" y="68">
+                                                <bitmap>media/images/box/interaction/reco_face.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.timeFilteredResult = [];
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        if(len(p) > 0):
+            if(len(p[1]) > 0): # just in case of the ALValue is in the wrong format
+                # get the ALValue returned by the time filtered recognition:
+                #    - [] when nothing new.
+                #    - [4] when a face has been detected but not recognized during the first 8s.
+                #    - [2, [faceName]] when one face has been recognized.
+                #    - [3, [faceName1, faceName2, ...]] when several faces have been recognized.
+                self.timeFilteredResult = p[1][len(p[1]) -1]
+                if( len(self.timeFilteredResult) == 1 ):
+                    # If a face has been detected for more than 8s but not recognized
+                    if(self.timeFilteredResult[0] == 4):
+                        self.onDetectWithoutReco( )
+                elif( len(self.timeFilteredResult) == 2 ):
+                    # If one or several faces have been recognized
+                    if(self.timeFilteredResult[0] in [2, 3]):
+                        for s in self.timeFilteredResult[1]:
+                            self.onRecognizedFace( s )
+
+    def onInput_onStop(self):
+        pass]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;FaceDetected extractor data." id="2" />
+                                                <Output name="onRecognizedFace" type="3" type_size="1" nature="1" inner="0" tooltip="Name of recognized face. If several faces are recognized, they are sent one after an&#x0A;other on this output.&#x0A;&#x0A;Note: if it is the wrong face which has been recognized, you have 7s to rename&#x0A;it with the relearn function available on one of  Add/Del Faces sub-boxes (Learn Face&#x0A;box)." id="3" />
+                                                <Output name="onDetectWithoutReco" type="1" type_size="1" nature="1" inner="0" tooltip="A face has been detected for more than 8s but has not been recognized. It means&#x0A;that the robot does not know this face but it would be a good idea to learn it." id="4" />
+                                            </Box>
+                                            <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="4" />
+                                            <Link inputowner="0" indexofinput="6" outputowner="1" indexofoutput="3" />
+                                            <Link inputowner="0" indexofinput="5" outputowner="1" indexofoutput="4" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                        </Box>
+                        <Box name="Switch Case (1)" id="10" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="459" y="682">
+                            <bitmap>media/images/box/interaction/choice.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion("andrew")):
+			self.output_1(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+</content>
+                            </script>
+                            <pluginContent>
+                                <keywords>
+                                    <keyword>&quot;andrew&quot;</keyword>
+                                    <keyword></keyword>
+                                    <keyword></keyword>
+                                </keywords>
+                            </pluginContent>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+                            <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+                            <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+                            <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+                        </Box>
+                        <Box name="Say (5)" id="11" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="782" y="680">
+                            <bitmap>media/images/box/interaction/say.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" />
+                            <Parameter name="Voice shaping (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean.' id="5" />
+                            <Parameter name="Speed (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean." id="6" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Say Text" id="2" localization="8" tooltip="Say the text received on its input." x="422" y="65">
+                                                <bitmap>media/images/box/interaction/say.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.tts = ALProxy('ALTextToSpeech')
+        self.ttsStop = ALProxy('ALTextToSpeech', True) #Create another proxy as wait is blocking if audioout is remote
+
+    def onLoad(self):
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.post.say(str(sentence))
+            self.ids.append(id)
+            self.tts.wait(id, 0)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                                <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                                <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                            </Box>
+                                            <Box name="Localized Text" id="5" localization="8" tooltip="Send on the output the text associated with the robot&apos;s current voice language.&#x0A;You can display and edit the text associated with any language by&#x0A;selecting the language in the combobox.&#x0A;&#x0A;!!Warning!! The text sent on the output is NOT the displayed one but the one&#x0A;associated with the robot&apos;s current voice language." plugin="localizationbox_plugin" x="114" y="68">
+                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+			GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+			GeneratedClass.__init__( self )
+
+		self.tts = ALProxy("ALTextToSpeech")
+		self.sentences = {
+			"Arabic" : "  ",
+			"Czech" : " Ahoj ",
+			"Danish" : " Hej ",
+			"German" : " Hallo ",
+			"Greek" : "  ",
+			"English" : " hello again andrew ",
+			"Spanish" : " Hola ",
+			"Finnish" : " Hei ",
+			"French" : " Bonjour ",
+			"Italian" : " Ciao ",
+			"Japanese" : " こんにちは ",
+			"Korean" : " 안녕하세요 ",
+			"Dutch" : " Hallo ",
+			"Norwegian" : "  ",
+			"Polish" : " Cześć ",
+			"Brazilian" : " Olá ",
+			"Portuguese" : " Olá ",
+			"Russian" : " Привет ",
+			"Swedish" : " Hallå ",
+			"Turkish" : " Merhaba ",
+			"Chinese" : "  "
+		}
+
+	def onInput_onStart(self):
+		sDefaultLang = self.tts.getLanguage()
+		self.onStopped(self.sentences[sDefaultLang])]]>
+</content>
+                                                </script>
+                                                <pluginContent>
+                                                    <arabic>
+                                                        <![CDATA[]]>
+</arabic>
+                                                    <czech>
+                                                        <![CDATA[Ahoj]]>
+</czech>
+                                                    <danish>
+                                                        <![CDATA[Hej]]>
+</danish>
+                                                    <german>
+                                                        <![CDATA[Hallo]]>
+</german>
+                                                    <greek>
+                                                        <![CDATA[]]>
+</greek>
+                                                    <english>
+                                                        <![CDATA[hello again andrew]]>
+</english>
+                                                    <spanish>
+                                                        <![CDATA[Hola]]>
+</spanish>
+                                                    <finnish>
+                                                        <![CDATA[Hei]]>
+</finnish>
+                                                    <french>
+                                                        <![CDATA[Bonjour]]>
+</french>
+                                                    <italian>
+                                                        <![CDATA[Ciao]]>
+</italian>
+                                                    <japanese>
+                                                        <![CDATA[こんにちは]]>
+</japanese>
+                                                    <korean>
+                                                        <![CDATA[안녕하세요]]>
+</korean>
+                                                    <dutch>
+                                                        <![CDATA[Hallo]]>
+</dutch>
+                                                    <norwegian>
+                                                        <![CDATA[]]>
+</norwegian>
+                                                    <polish>
+                                                        <![CDATA[Cześć]]>
+</polish>
+                                                    <brazilian>
+                                                        <![CDATA[Olá]]>
+</brazilian>
+                                                    <portuguese>
+                                                        <![CDATA[Olá]]>
+</portuguese>
+                                                    <russian>
+                                                        <![CDATA[Привет]]>
+</russian>
+                                                    <swedish>
+                                                        <![CDATA[Hallå]]>
+</swedish>
+                                                    <turkish>
+                                                        <![CDATA[Merhaba]]>
+</turkish>
+                                                    <chinese>
+                                                        <![CDATA[]]>
+</chinese>
+                                                    <language>7</language>
+                                                </pluginContent>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
+                                                <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Data sent when asked." id="3" />
+                                            </Box>
+                                            <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
+                                            <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                            <Link inputowner="2" indexofinput="2" outputowner="5" indexofoutput="3" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                            <Resource name="Speech" type="Lock" timeout="0" />
+                        </Box>
+                        <Box name="Unlearn Face" id="5" localization="8" tooltip="Unlearn the face which name is set on the input.&#x0A;&#x0A;Note: If the face has not been learnt before, the onFailure output will be stimulated.&#x0A;&#x0A;V1.1.0" x="721" y="915">
+                            <bitmap>media/images/box/interaction/unlearn_face.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        #~ puts code for box initialization here
+        self.blsRunning = False
+        pass
+
+    def onUnload(self):
+        #~ puts code for box cleanup here
+        pass
+
+    def onInput_onUnlearn(self, p):
+        #~ self.onSuccess() #~ activate output of the box
+        if(self.blsRunning ):
+            return
+        self.blsRunning = True
+        try:
+            faceDetectionModule = ALProxy("ALFaceDetection")
+        except Exception as e:
+            faceDetectionModule = None
+            self.logger.error(e)
+        if( faceDetectionModule and faceDetectionModule.forgetPerson(p) ):
+            self.onSuccess()
+        else:
+            self.onFailure()
+        self.blsRunning = False]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onUnlearn" type="3" type_size="1" nature="2" inner="0" tooltip="Name of face you want the robot to unlearn." id="2" />
+                            <Output name="onSuccess" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when the face has been successfully unlearnt." id="3" />
+                            <Output name="onFailure" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when the box encountered an error (unknown face name, for example)." id="4" />
+                        </Box>
+                        <Box name="Say (2)" id="12" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="400" y="491">
+                            <bitmap>media/images/box/interaction/say.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" />
+                            <Parameter name="Voice shaping (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean.' id="5" />
+                            <Parameter name="Speed (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean." id="6" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Say Text" id="2" localization="8" tooltip="Say the text received on its input." x="422" y="65">
+                                                <bitmap>media/images/box/interaction/say.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.tts = ALProxy('ALTextToSpeech')
+        self.ttsStop = ALProxy('ALTextToSpeech', True) #Create another proxy as wait is blocking if audioout is remote
+
+    def onLoad(self):
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.post.say(str(sentence))
+            self.ids.append(id)
+            self.tts.wait(id, 0)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                                <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                                <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                            </Box>
+                                            <Box name="Localized Text" id="5" localization="8" tooltip="Send on the output the text associated with the robot&apos;s current voice language.&#x0A;You can display and edit the text associated with any language by&#x0A;selecting the language in the combobox.&#x0A;&#x0A;!!Warning!! The text sent on the output is NOT the displayed one but the one&#x0A;associated with the robot&apos;s current voice language." plugin="localizationbox_plugin" x="114" y="68">
+                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+			GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+			GeneratedClass.__init__( self )
+
+		self.tts = ALProxy("ALTextToSpeech")
+		self.sentences = {
+			"Arabic" : "  ",
+			"Czech" : " Ahoj ",
+			"Danish" : " Hej ",
+			"German" : " Hallo ",
+			"Greek" : "  ",
+			"English" : " I do not recognize you, what is your name? ",
+			"Spanish" : " Hola ",
+			"Finnish" : " Hei ",
+			"French" : " Bonjour ",
+			"Italian" : " Ciao ",
+			"Japanese" : " こんにちは ",
+			"Korean" : " 안녕하세요 ",
+			"Dutch" : " Hallo ",
+			"Norwegian" : "  ",
+			"Polish" : " Cześć ",
+			"Brazilian" : " Olá ",
+			"Portuguese" : " Olá ",
+			"Russian" : " Привет ",
+			"Swedish" : " Hallå ",
+			"Turkish" : " Merhaba ",
+			"Chinese" : "  "
+		}
+
+	def onInput_onStart(self):
+		sDefaultLang = self.tts.getLanguage()
+		self.onStopped(self.sentences[sDefaultLang])]]>
+</content>
+                                                </script>
+                                                <pluginContent>
+                                                    <arabic>
+                                                        <![CDATA[]]>
+</arabic>
+                                                    <czech>
+                                                        <![CDATA[Ahoj]]>
+</czech>
+                                                    <danish>
+                                                        <![CDATA[Hej]]>
+</danish>
+                                                    <german>
+                                                        <![CDATA[Hallo]]>
+</german>
+                                                    <greek>
+                                                        <![CDATA[]]>
+</greek>
+                                                    <english>
+                                                        <![CDATA[I do not recognize you, what is your name?]]>
+</english>
+                                                    <spanish>
+                                                        <![CDATA[Hola]]>
+</spanish>
+                                                    <finnish>
+                                                        <![CDATA[Hei]]>
+</finnish>
+                                                    <french>
+                                                        <![CDATA[Bonjour]]>
+</french>
+                                                    <italian>
+                                                        <![CDATA[Ciao]]>
+</italian>
+                                                    <japanese>
+                                                        <![CDATA[こんにちは]]>
+</japanese>
+                                                    <korean>
+                                                        <![CDATA[안녕하세요]]>
+</korean>
+                                                    <dutch>
+                                                        <![CDATA[Hallo]]>
+</dutch>
+                                                    <norwegian>
+                                                        <![CDATA[]]>
+</norwegian>
+                                                    <polish>
+                                                        <![CDATA[Cześć]]>
+</polish>
+                                                    <brazilian>
+                                                        <![CDATA[Olá]]>
+</brazilian>
+                                                    <portuguese>
+                                                        <![CDATA[Olá]]>
+</portuguese>
+                                                    <russian>
+                                                        <![CDATA[Привет]]>
+</russian>
+                                                    <swedish>
+                                                        <![CDATA[Hallå]]>
+</swedish>
+                                                    <turkish>
+                                                        <![CDATA[Merhaba]]>
+</turkish>
+                                                    <chinese>
+                                                        <![CDATA[]]>
+</chinese>
+                                                    <language>5</language>
+                                                </pluginContent>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
+                                                <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Data sent when asked." id="3" />
+                                            </Box>
+                                            <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
+                                            <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                            <Link inputowner="2" indexofinput="2" outputowner="5" indexofoutput="3" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                            <Resource name="Speech" type="Lock" timeout="0" />
+                        </Box>
+                        <Box name="Say (1)" id="2" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="354" y="74">
+                            <bitmap>media/images/box/interaction/say.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                            <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" />
+                            <Parameter name="Voice shaping (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean.' id="5" />
+                            <Parameter name="Speed (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed.&#x0A;&#x0A;!Warning! This feature is not available yet in Japanese, Chinese and Korean." id="6" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Say Text" id="2" localization="8" tooltip="Say the text received on its input." x="422" y="65">
+                                                <bitmap>media/images/box/interaction/say.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.tts = ALProxy('ALTextToSpeech')
+        self.ttsStop = ALProxy('ALTextToSpeech', True) #Create another proxy as wait is blocking if audioout is remote
+
+    def onLoad(self):
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.post.say(str(sentence))
+            self.ids.append(id)
+            self.tts.wait(id, 0)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                                <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                                <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                            </Box>
+                                            <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
+                                            <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                            <Resource name="Speech" type="Lock" timeout="0" />
+                        </Box>
+                        <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="6" />
+                        <Link inputowner="1" indexofinput="3" outputowner="1" indexofoutput="5" />
+                        <Link inputowner="1" indexofinput="3" outputowner="1" indexofoutput="6" />
+                        <Link inputowner="11" indexofinput="2" outputowner="10" indexofoutput="4" />
+                        <Link inputowner="10" indexofinput="2" outputowner="9" indexofoutput="6" />
+                        <Link inputowner="5" indexofinput="2" outputowner="10" indexofoutput="4" />
+                        <Link inputowner="9" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="1" indexofinput="2" outputowner="12" indexofoutput="4" />
+                        <Link inputowner="12" indexofinput="2" outputowner="9" indexofoutput="5" />
+                        <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="4" />
+                        <Link inputowner="9" indexofinput="2" outputowner="5" indexofoutput="3" />
+                        <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="5" />
+                        <Link inputowner="9" indexofinput="2" outputowner="2" indexofoutput="4" />
+                    </Diagram>
+                </BehaviorKeyframe>
+            </BehaviorLayer>
+        </Timeline>
+    </Box>
+</ChoregrapheProject>
