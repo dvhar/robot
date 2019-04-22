@@ -1,0 +1,14 @@
+how to merge git changes:
+  -download latest version of git repo:
+      git pull origin master
+  -edit files
+  -if repo was changed since you downloaded:
+      git checkout -b newbranch    (newbranch is name of new branch)
+      git commit -a -m "message about what you changed"
+      git checkout master
+      git merge newbranch
+      -if merge didn't work: https://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-git
+      git push origin master
+  -if repo was not changed since you downloaded:
+      git commit -a -m "message about what you changed"
+      git push origin master
