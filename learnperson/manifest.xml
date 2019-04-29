@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" uuid="test1-9d290a">
+<package version="0.0.0" uuid="learnperson-9d290a">
  <names>
-  <name lang="en_US">test1</name>
+  <name lang="en_US">learnperson</name>
  </names>
  <supportedLanguages>
   <language>en_US</language>
@@ -10,8 +10,19 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="behavior_1">
-   <nature>interactive</nature>
+  <behaviorContent path="nameandface">
+   <nature>solitary</nature>
+   <names>
+    <name lang="en_US">NameAndFace</name>
+   </names>
+   <descriptions>
+    <description lang="en_US">Say name if person is recognized or try to learn name and face</description>
+   </descriptions>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[(('Launchpad/NumPeopleZone2' > 0) ~ 5)]]></condition>
+   </autonomous>
    <permissions/>
   </behaviorContent>
  </contents>
