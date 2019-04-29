@@ -1,0 +1,21 @@
+Find out nao's ip address:
+    turn it on and hold the chest button until it starts talking. It will tell you the ip address.
+
+Give your ethernet port the right ip address - same subnet as the robot
+
+On windows:
+control panel
+    network and sharing center
+        change adapter settings
+            pick an interface
+                properties
+                    internet protocol v4
+                        properties
+                            enter ip address and netmask
+
+On linux:
+open terminal
+    -find out your interface name:
+    ifconfig
+        -give that interface an ip address:    
+        sudo ifconfig <interface name> <ip address> netmask 255.255.0.0
