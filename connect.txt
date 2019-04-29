@@ -1,3 +1,13 @@
+How to turn Nao on
+How to connect to wifi
+How to make sure he's charged
+How to download choreographe
+How do do basic choreographe things with the robot
+How to make a project/combine projects
+How to upload projects onto robot
+
+
+
 Find out nao's ip address:
     turn it on and hold the chest button until it starts talking. It will tell you the ip address.
 
