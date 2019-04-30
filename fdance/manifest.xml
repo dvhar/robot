@@ -12,6 +12,9 @@
  <contents>
   <behaviorContent path="behavior_1">
    <nature>interactive</nature>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/NumPeopleZone2' > 0) ~ 5]]></condition>
+   </autonomous>
    <permissions/>
   </behaviorContent>
  </contents>
