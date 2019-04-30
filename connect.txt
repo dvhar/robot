@@ -1,6 +1,48 @@
-How to turn Nao on
+How to Turn Nao On:
+1. Hold down the button on his chest for about 10 seconds.
+    -If he begins lighting up, and starts talking, he is on.
+    -If he doesn't, he may be dead. Try plugging his charger in, and try step one again.
+        *You should charge him for at least 90 minutes before using him. 
+2. After he's turned on, he will tell you his IP address.
+    -Write that down, you will need it.
+3. Type the IP address he tells you into your search bar.
+    -You have to ensure he's registered before you can download the choregraphe software.
+4. This robot should already be registered, but to login to the site use:
+    -email:
+    -password:
+5. Press connect
+    
+How to Connect Him to Your Computer:
+1. Give your ethernet port the right ip address. It's the same subnet as the robot.
+    On windows:
+        -control panel
+        -network and sharing center
+        -change adapter settings
+        -pick an interface
+        -properties
+        -internet protocol v4
+        -properties
+        -enter ip address and netmask
+    On Linux:
+        -open terminal
+        -find out your interface name using:
+            ifconfig
+        -give that interface an ip address:
+            sudo ifconfig <interface name> <ip address> netmask 255.255.0.0
+
+How to Download Choregraphe:
+1. In order to download Choregraphe, Nao has to be registered.
+2. Go to http://doc.aldebaran.com/2-4/dev/community_software.html#retrieving-software
+3. Click the link in step 2.
+4. You will need the above email and password to access the download.
+5. Follow the directions to download the program.
+6. When you're able to open it, it will ask for an activation code.
+    -activation code: 
+7. After you type in the activation code, you will be on the home page of the Choregraphe application. 
+
+
+
 How to connect to wifi
-How to make sure he's charged
 How to download choreographe
 How do do basic choreographe things with the robot
 How to make a project/combine projects
