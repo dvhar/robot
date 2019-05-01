@@ -2,12 +2,17 @@
 group project repo
 
 How to Turn Nao On:
-1. Hold down the button on his chest for about 10 seconds. If he begins lighting up, and starts talking, he is on. If he doesn't, he may be dead. Try plugging his charger in, and try step one again.
+<ol>
+<li> Hold down the button on his chest for about 10 seconds. If he begins lighting up, and starts talking, he is on. If he doesn't, he may be dead. Try plugging his charger in, and try step one again.</li>
         *You should charge him for at least 90 minutes before using him. 
-2. After he's turned on, he will tell you his IP address. Write that down, you will need it.
-3. Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar. Do this with ethernet, and from there you can connect him to wifi if you want. You will need to login with username and password. 
+       <li> After he's turned on, he will tell you his IP address. Write that down, you will need it.</li>
+<li> Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar. Do this with ethernet, and from there you can connect him to wifi if you want. You will need to login with username and password. </li>
+       
        -username: nao
        -password: beget579\[delete
+
+</ol>
+
 ___
     
 To Connect Nao to Your Computer:
