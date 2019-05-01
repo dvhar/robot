@@ -1,4 +1,4 @@
-# robot
+# Nao Robot Greeter
 
 How to Turn Nao On:
 <ol>
