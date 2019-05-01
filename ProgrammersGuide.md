@@ -40,9 +40,10 @@ How to Download Choregraphe:
 5. After you type in the activation code, you will be on the home page of the Choregraphe application. 
 
 How to do a Basic Choregraphe project:
-1. Open your choregraphe application
-2. Click "New Project"
-3. There should be a virtual robot in the bottom right corner. If not:
+* Watch robo-phil videos at https://www.youtube.com/user/robotphilip
+* Open your choregraphe application
+* Click "New Project"
+* There should be a virtual robot in the bottom right corner. If not:
 
     -click connection in the top left corner
         
@@ -52,25 +53,25 @@ How to do a Basic Choregraphe project:
         
     -if that doesn't work, try exiting out of choregraphe and try again
         
-4. On the left side of the screen, there should be a box with libraries of actions. If not:
+* On the left side of the screen, there should be a box with libraries of actions. If not:
 
     -click view in the top left corner
         
     -click the first option: "box libraries"
         
-5. Click and drag the say option to the middle of the screen
-6. Double click the "say" box, it will bring you to a localized text box
-7. Here, you can change the language, and pick what you want him to say
-8. Type "Hello humans!" into the localized text box
-9. Click root to go back to the main project
-10. Click the small box in the left hand corner with the black arrow
-11. Drag the "noodle" from the first small box to the small box with the black arrow on the "say" box
-12. To run your program, click the green arrow at the top
-13. If nothing happens, don't worry. The virtual robot will not talk through your speakers. To make sure it's working, open the dialog box
-14. To open the dialog box, click view, then click the dialog box option
-15. Try running your program again, "Hello humans!" will pop up in the dialog box*
+* Click and drag the say option to the middle of the screen
+* Double click the "say" box, it will bring you to a localized text box
+* Here, you can change the language, and pick what you want him to say
+* Type "Hello humans!" into the localized text box
+* Click root to go back to the main project
+* Click the small box in the left hand corner with the black arrow
+* Drag the "noodle" from the first small box to the small box with the black arrow on the "say" box
+* To run your program, click the green arrow at the top
+* If nothing happens, don't worry. The virtual robot will not talk through your speakers. To make sure it's working, open the dialog box
+* To open the dialog box, click view, then click the dialog box option
+* Try running your program again, "Hello humans!" will pop up in the dialog box*
     *when you connect the real robot to your computer, he will say it out loud
-16. Don't forget to save your project. Click file, then save project as...
+* Don't forget to save your project. Click file, then save project as...
 
 
 
