@@ -1,5 +1,4 @@
 # robot
-group project repo
 
 How to Turn Nao On:
 <ol>
