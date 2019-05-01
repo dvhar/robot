@@ -1,34 +1,40 @@
+# robot
+group project repo
+
 How to Turn Nao On:
 1. Hold down the button on his chest for about 10 seconds.
     -If he begins lighting up, and starts talking, he is on.
     -If he doesn't, he may be dead. Try plugging his charger in, and try step one again.
         *You should charge him for at least 90 minutes before using him. 
 2. After he's turned on, he will tell you his IP address.
+
     -Write that down, you will need it.
-3. Type the IP address he tells you into your search bar.
+3. Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar.
+
     -You have to ensure he's registered before you can download the choregraphe software.
 4. This robot should already be registered, but to login to the site use:
-    -username: nao
-    -password: beget579[delete
+     -username: nao
 5. Press connect
     
-How to Connect Him to Your Computer:
-1. Give your ethernet port the right ip address. It's the same subnet as the robot.
-    On windows:
-        -control panel
-        -network and sharing center
-        -change adapter settings
-        -pick an interface
-        -properties
-        -internet protocol v4
-        -properties
-        -enter ip address and netmask
-    On Linux:
-        -open terminal
-        -find out your interface name using:
-            ifconfig
-        -give that interface an ip address:
-            sudo ifconfig <interface name> <ip address> netmask 255.255.0.0
+To Connect Nao to Your Computer:
+1. Give your ethernet port an IP address with the same subnet as Nao's.
+
+On windows:
+1. control panel
+2. network and sharing center
+3. change adapter settings
+4. pick an interface
+5. properties
+6. internet protocol v4
+7. properties
+8. enter ip address and netmask
+
+On Linux:
+1. open terminal
+2. find out your interface name:
+    ifconfig
+3. give that interface an ip address:
+    sudo ifconfig \<interface name\> \<ip address\> netmask 255.255.0.0
 
 How to Download Choregraphe:
 1. In order to download Choregraphe, Nao has to be registered.
@@ -38,22 +44,27 @@ How to Download Choregraphe:
 5. Follow the directions to download the program.
 6. When you're able to open it, it will ask for an activation code.
     -copy and paste the activation code:
-    -activation code: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
 7. After you type in the activation code, you will be on the home page of the Choregraphe application. 
 
 How to do a Basic Choregraphe project:
 1. Open your choregraphe application
 2. Click "New Project"
-3. There should be a virtual robot in the bottom right corner
-    -if not:
-        -click connection in the top left corner
-        -click connect to
-        -click the desktop robot
-        -if that doesn't work, try exiting out of choregraphe and try again
-4. On the left side of the screen, there should be a box with libraries of actions
-    -if not:
-        -click view in the top left corner
-        -click the first option: "box libraries"
+3. There should be a virtual robot in the bottom right corner. If not:
+
+    -click connection in the top left corner
+        
+    -click connect to
+        
+    -click the desktop robot
+        
+    -if that doesn't work, try exiting out of choregraphe and try again
+        
+4. On the left side of the screen, there should be a box with libraries of actions. If not:
+
+    -click view in the top left corner
+        
+    -click the first option: "box libraries"
+        
 5. Click and drag the say option to the middle of the screen
 6. Double click the "say" box, it will bring you to a localized text box
 7. Here, you can change the language, and pick what you want him to say
@@ -73,27 +84,3 @@ How to do a Basic Choregraphe project:
 
 How to make a project/combine projects
 How to upload projects onto robot
-
-
-
-Find out nao's ip address:
-    turn it on and hold the chest button until it starts talking. It will tell you the ip address.
-
-Give your ethernet port the right ip address - same subnet as the robot
-
-On windows:
-control panel
-    network and sharing center
-        change adapter settings
-            pick an interface
-                properties
-                    internet protocol v4
-                        properties
-                            enter ip address and netmask
-
-On linux:
-open terminal
-    -find out your interface name:
-    ifconfig
-        -give that interface an ip address:    
-        sudo ifconfig <interface name> <ip address> netmask 255.255.0.0
