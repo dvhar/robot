@@ -5,7 +5,10 @@ How to Turn Nao On:
 1. Hold down the button on his chest for about 10 seconds. If he begins lighting up, and starts talking, he is on. If he doesn't, he may be dead. Try plugging his charger in, and try step one again.
         *You should charge him for at least 90 minutes before using him. 
 2. After he's turned on, he will tell you his IP address. Write that down, you will need it.
-3. Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar. Do this with ethernet, and from there you can connect him to wifi if you want. You will need to login with username and password. Username is 'nao'.
+3. Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar. Do this with ethernet, and from there you can connect him to wifi if you want. You will need to login with username and password. 
+       -username: nao
+       -password: beget579/[delete
+       
     
 To Connect Nao to Your Computer:
 1. Give your ethernet port an IP address with the same subnet as Nao's.
@@ -30,12 +33,11 @@ On Linux:
 How to Download Choregraphe:
 1. In order to download Choregraphe, Nao has to be registered.
 2. Go to http://doc.aldebaran.com/2-4/dev/community_software.html#retrieving-software
-3. Click the link in step 2.
-4. You will need the above email and password to access the download. *******DID WE USE THE SAME USERNAME AND PASSWORD TO REGISTER??
-5. Follow the directions to download the program.
-6. When you're able to open it, it will ask for an activation code.
-    -copy and paste the activation code:
-7. After you type in the activation code, you will be on the home page of the Choregraphe application. 
+3. Follow the directions to download the program.
+4. When you're able to open it, it will ask for an activation code.
+    -copy and paste the activation code: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
+
+5. After you type in the activation code, you will be on the home page of the Choregraphe application. 
 
 How to do a Basic Choregraphe project:
 1. Open your choregraphe application
