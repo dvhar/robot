@@ -85,7 +85,9 @@ ___
 
 Useful links
 
-[robo-phil youtube channel](https://www.youtube.com/user/robotphilip)
+[Robo-phil youtube channel](https://www.youtube.com/user/robotphilip)
+
+[How to package an application](http://bx.psu.edu/~thanh/naoqi/software/choregraphe/objects/application.html)
 
 ___
 
