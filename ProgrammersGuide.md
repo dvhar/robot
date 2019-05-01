@@ -52,19 +52,19 @@ How to do a Basic Choregraphe project:
 2. Click "New Project"
 3. There should be a virtual robot in the bottom right corner. If not:
 
-        -click connection in the top left corner
+    -click connection in the top left corner
         
-        -click connect to
+    -click connect to
         
-        -click the desktop robot
+    -click the desktop robot
         
-        -if that doesn't work, try exiting out of choregraphe and try again
+    -if that doesn't work, try exiting out of choregraphe and try again
         
 4. On the left side of the screen, there should be a box with libraries of actions. If not:
 
-        -click view in the top left corner
+    -click view in the top left corner
         
-        -click the first option: "box libraries"
+    -click the first option: "box libraries"
         
 5. Click and drag the say option to the middle of the screen
 6. Double click the "say" box, it will bring you to a localized text box
