@@ -7,7 +7,7 @@ How to Turn Nao On:
 2. After he's turned on, he will tell you his IP address. Write that down, you will need it.
 3. Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar. Do this with ethernet, and from there you can connect him to wifi if you want. You will need to login with username and password. 
        -username: nao
-       -password: beget579/[delete
+       -password: beget579\[delete
        
     
 To Connect Nao to Your Computer:
