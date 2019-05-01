@@ -13,14 +13,13 @@ How to Turn Nao On:
 
     -You have to ensure he's registered before you can download the choregraphe software.
 4. This robot should already be registered, but to login to the site use:
-
-    -username: nao
+     -username: nao
 5. Press connect
     
-To connect Nao to your computer, first give your ethernet port an IP address with the same subnet as Nao's.
+To Connect Nao to Your Computer:
+1. Give your ethernet port an IP address with the same subnet as Nao's.
 
 On windows:
-
 1. control panel
 2. network and sharing center
 3. change adapter settings
