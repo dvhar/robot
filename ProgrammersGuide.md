@@ -44,38 +44,43 @@ How to Download Choregraphe:
 ___
 
 How to do a Basic Choregraphe project:
-* Open your choregraphe application
-* Click "New Project"
-* There should be a virtual robot in the bottom right corner. If not:
+<ol>
+<li> Open your choregraphe application</li>
+<li> Click "New Project"</li>
+<li> There should be a virtual robot in the bottom right corner. If not:</li>
 
-    -click connection in the top left corner
+   -click connection in the top left corner
         
-    -click connect to
+   -click connect to
         
-    -click the desktop robot
+   -click the desktop robot
         
-    -if that doesn't work, try exiting out of choregraphe and try again
+   -if that doesn't work, try exiting out of choregraphe and try again
         
-* On the left side of the screen, there should be a box with libraries of actions. If not:
+<li> On the left side of the screen, there should be a box with libraries of actions. If not:</li>
 
-    -click view in the top left corner
+   -click view in the top left corner
         
-    -click the first option: "box libraries"
+   -click the first option: "box libraries"
         
-* Click and drag the say option to the middle of the screen
-* Double click the "say" box, it will bring you to a localized text box
-* Here, you can change the language, and pick what you want him to say
-* Type "Hello humans!" into the localized text box
-* Click root to go back to the main project
-* Click the small box in the left hand corner with the black arrow
-* Drag the "noodle" from the first small box to the small box with the black arrow on the "say" box
-* To run your program, click the green arrow at the top
-* If nothing happens, don't worry. The virtual robot will not talk through your speakers. To make sure it's working, open the dialog box
-* To open the dialog box, click view, then click the dialog box option
-* Try running your program again, "Hello humans!" will pop up in the dialog box*
-    *when you connect the real robot to your computer, he will say it out loud
-* Don't forget to save your project. Click file, then save project as...
+<li> Click and drag the say option to the middle of the screen</li>
+<li> Double click the "say" box, it will bring you to a localized text box</li>
+<li> Here, you can change the language, and pick what you want him to say</li>
+<li> Type "Hello humans!" into the localized text box</li>
+<li> Click root to go back to the main project</li>
+<li> Click the small box in the left hand corner with the black arrow</li>
+<li> Drag the "noodle" from the first small box to the small box with the black arrow on the "say" box</li>
+<li> To run your program, click the green arrow at the top</li>
 
+   -If nothing happens, don't worry. The virtual robot will not talk through your speakers. To make sure it's working, open the dialog box
+<li> To open the dialog box, click view, then click the dialog box option</li>
+
+<li> Try running your program again, "Hello humans!" will pop up in the dialog box*</li>
+
+   -when you connect the real robot to your computer, he will say it out loud
+    
+<li> Don't forget to save your project. Click file, then save project as...</li>
+</ol>
 ___
 
 Useful links
