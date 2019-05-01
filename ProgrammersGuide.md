@@ -14,21 +14,29 @@ To Connect Nao to Your Computer:
 1. Give your ethernet port an IP address with the same subnet as Nao's.
 
 On windows:
-1. control panel
-2. network and sharing center
-3. change adapter settings
-4. pick an interface
-5. properties
-6. internet protocol v4
-7. properties
-8. enter ip address and netmask
+<ol>
+<li> control panel</li>
+<li> network and sharing center</li>
+<li> change adapter settings</li>
+<li> pick an interface</li>
+<li> properties</li>
+<li> internet protocol v4</li>
+<li> properties</li>
+<li> enter ip address and netmask</li>
+</ol>
 
 On Linux:
-1. open terminal
-2. find out your interface name:
+<ol>
+<li> open terminal</li>
+<li> find out your interface name:</li>
+
     ifconfig
-3. give that interface an ip address:
+
+<li> give that interface an ip address:</li>
+       
     sudo ifconfig \<interface name\> \<ip address\> netmask 255.255.0.0
+    
+</ol>
 
 ___
 
