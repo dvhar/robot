@@ -1,4 +1,4 @@
-# Nao Robot Greeter
+# Nao Robot Programming Guide
 
 How to Turn Nao On:
 <ol>
