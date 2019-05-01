@@ -7,31 +7,35 @@ How to Turn Nao On:
     -If he doesn't, he may be dead. Try plugging his charger in, and try step one again.
         *You should charge him for at least 90 minutes before using him. 
 2. After he's turned on, he will tell you his IP address.
+
     -Write that down, you will need it.
-3. Type the IP address he tells you into your search bar.
+3. Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar.
+
     -You have to ensure he's registered before you can download the choregraphe software.
 4. This robot should already be registered, but to login to the site use:
+
     -username: nao
-    -password: beget579[delete
 5. Press connect
     
-How to Connect Him to Your Computer:
-1. Give your ethernet port the right ip address. It's the same subnet as the robot.
-    On windows:
-        -control panel
-        -network and sharing center
-        -change adapter settings
-        -pick an interface
-        -properties
-        -internet protocol v4
-        -properties
-        -enter ip address and netmask
-    On Linux:
-        -open terminal
-        -find out your interface name using:
-            ifconfig
-        -give that interface an ip address:
-            sudo ifconfig <interface name> <ip address> netmask 255.255.0.0
+To connect Nao to your computer, first give your ethernet port an IP address with the same subnet as Nao's.
+
+On windows:
+
+1. control panel
+2. network and sharing center
+3. change adapter settings
+4. pick an interface
+5. properties
+6. internet protocol v4
+7. properties
+8. enter ip address and netmask
+
+On Linux:
+1. open terminal
+2. find out your interface name:
+    ifconfig
+3. give that interface an ip address:
+    sudo ifconfig \<interface name\> \<ip address\> netmask 255.255.0.0
 
 How to Download Choregraphe:
 1. In order to download Choregraphe, Nao has to be registered.
@@ -41,7 +45,6 @@ How to Download Choregraphe:
 5. Follow the directions to download the program.
 6. When you're able to open it, it will ask for an activation code.
     -copy and paste the activation code:
-    -activation code: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
 7. After you type in the activation code, you will be on the home page of the Choregraphe application. 
 
 How to do a Basic Choregraphe project:
