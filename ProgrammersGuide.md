@@ -50,16 +50,22 @@ How to Download Choregraphe:
 How to do a Basic Choregraphe project:
 1. Open your choregraphe application
 2. Click "New Project"
-3. There should be a virtual robot in the bottom right corner
-    -if not:
+3. There should be a virtual robot in the bottom right corner. If not:
+
         -click connection in the top left corner
+        
         -click connect to
+        
         -click the desktop robot
+        
         -if that doesn't work, try exiting out of choregraphe and try again
-4. On the left side of the screen, there should be a box with libraries of actions
-    -if not:
+        
+4. On the left side of the screen, there should be a box with libraries of actions. If not:
+
         -click view in the top left corner
+        
         -click the first option: "box libraries"
+        
 5. Click and drag the say option to the middle of the screen
 6. Double click the "say" box, it will bring you to a localized text box
 7. Here, you can change the language, and pick what you want him to say
@@ -79,27 +85,3 @@ How to do a Basic Choregraphe project:
 
 How to make a project/combine projects
 How to upload projects onto robot
-
-
-
-Find out nao's ip address:
-    turn it on and hold the chest button until it starts talking. It will tell you the ip address.
-
-Give your ethernet port the right ip address - same subnet as the robot
-
-On windows:
-control panel
-    network and sharing center
-        change adapter settings
-            pick an interface
-                properties
-                    internet protocol v4
-                        properties
-                            enter ip address and netmask
-
-On linux:
-open terminal
-    -find out your interface name:
-    ifconfig
-        -give that interface an ip address:    
-        sudo ifconfig <interface name> <ip address> netmask 255.255.0.0
