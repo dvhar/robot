@@ -8,7 +8,7 @@ How to Turn Nao On:
 3. Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar. Do this with ethernet, and from there you can connect him to wifi if you want. You will need to login with username and password. 
        -username: nao
        -password: beget579\[delete
-       
+___
     
 To Connect Nao to Your Computer:
 1. Give your ethernet port an IP address with the same subnet as Nao's.
@@ -30,6 +30,8 @@ On Linux:
 3. give that interface an ip address:
     sudo ifconfig \<interface name\> \<ip address\> netmask 255.255.0.0
 
+___
+
 How to Download Choregraphe:
 1. In order to download Choregraphe, Nao has to be registered.
 2. Go to http://doc.aldebaran.com/2-4/dev/community_software.html#retrieving-software
@@ -39,8 +41,9 @@ How to Download Choregraphe:
 
 5. After you type in the activation code, you will be on the home page of the Choregraphe application. 
 
+___
+
 How to do a Basic Choregraphe project:
-* Watch robo-phil videos at https://www.youtube.com/user/robotphilip
 * Open your choregraphe application
 * Click "New Project"
 * There should be a virtual robot in the bottom right corner. If not:
@@ -73,8 +76,13 @@ How to do a Basic Choregraphe project:
     *when you connect the real robot to your computer, he will say it out loud
 * Don't forget to save your project. Click file, then save project as...
 
+___
 
+Useful links
 
+[robo-phil youtube channel](https://www.youtube.com/user/robotphilip)
+
+___
 
 How to make a project/combine projects
 How to upload projects onto robot
