@@ -33,13 +33,15 @@ On Linux:
 ___
 
 How to Download Choregraphe:
-1. In order to download Choregraphe, Nao has to be registered.
-2. Go to http://doc.aldebaran.com/2-4/dev/community_software.html#retrieving-software
-3. Follow the directions to download the program.
-4. When you're able to open it, it will ask for an activation code.
+<ol>
+<li> In order to download Choregraphe, Nao has to be registered.</li>
+<li> Go to http://doc.aldebaran.com/2-4/dev/community_software.html#retrieving-software</li>
+<li> Follow the directions to download the program.</li>
+<li> When you're able to open it, it will ask for an activation code.</li>
     -copy and paste the activation code: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
 
-5. After you type in the activation code, you will be on the home page of the Choregraphe application. 
+<li> After you type in the activation code, you will be on the home page of the Choregraphe application. </li>
+</ol>
 
 ___
 
@@ -81,6 +83,7 @@ How to do a Basic Choregraphe project:
     
 <li> Don't forget to save your project. Click file, then save project as...</li>
 </ol>
+
 ___
 
 Useful links
