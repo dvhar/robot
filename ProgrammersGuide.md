@@ -11,7 +11,14 @@ How to Turn Nao On:
        -password: beget579\[delete
 
 </ol>
-
+___
+    
+How to Connect Nao to Wifi:
+<ol>
+       <li>After you login with his IP address, select one of the available WiFi networks.</li>
+       <li>Complete the required parameters, and click the connect button</li>
+ </ol>
+ 
 ___
     
 To Connect Nao to Your Computer:
