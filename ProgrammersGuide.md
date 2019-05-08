@@ -113,5 +113,6 @@ Useful links
 
 ___
 
-How to make a project/combine projects
-How to upload projects onto robot
+How to Make a Project (with multiple parts):
+
+How to Upload Projects onto Robot:
