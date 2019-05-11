@@ -4,25 +4,25 @@ How to Turn Nao On:
 <ol>
 <li> Hold down the button on his chest for about 10 seconds. If he begins lighting up, and starts talking, he is on. If he doesn't, he may be dead. Try plugging his charger in, and try step one again.</li>
         *You should charge him for at least 90 minutes before using him. 
-       <li> After he's turned on, he will tell you his IP address. Write that down, you will need it.</li>
+       <li> After he's turned on, he will tell you his IP address. If he doesn't, press the chest button again and he will.</li>
 <li> Connect Nao to your computer's network and type the IP address he tells you into your browser's address bar. Do this with ethernet, and from there you can connect him to wifi if you want. You will need to login with username and password. </li>
        
        -username: nao
        -password: beget579\[delete
 
 </ol>
+
 ___
     
 How to Connect Nao to Wifi:
 <ol>
        <li>After you login with his IP address, select one of the available WiFi networks.</li>
-       <li>Complete the required parameters, and click the connect button</li>
+       <li>Complete the required parameters, and click the connect button.</li>
  </ol>
  
 ___
     
-To Connect Nao to Your Computer:
-1. Give your ethernet port an IP address with the same subnet as Nao's.
+If your computer doesn't automatically connect to Nao's network when you plug in the cable, you will nee to give your ethernet port an IP address with the same subnet as Nao's. Make the first 3 numbers the same as Nao's, and the last number different.
 
 On windows:
 <ol>
@@ -45,7 +45,7 @@ On Linux:
 
 <li> give that interface an ip address:</li>
        
-    sudo ifconfig \<interface name\> \<ip address\> netmask 255.255.0.0
+    sudo ifconfig \<interface name\> \<ip address\> netmask 255.255.255.0
     
 </ol>
 
