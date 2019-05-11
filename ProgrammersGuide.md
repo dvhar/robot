@@ -103,7 +103,8 @@ How to do a Basic Choregraphe project:
 <li> Don't forget to save your project. Click file, then save project as...</li>
 </ol>
 
-<img src="pics/hello.png" align="middle"/>
+<img src="pics/hello.png" align="middle"/>___
+
 ___
 
 Useful links
