@@ -45,7 +45,7 @@ On Linux:
 
 <li> give that interface an ip address:</li>
        
-    sudo ifconfig \<interface name\> \<ip address\> netmask 255.255.255.0
+    sudo ifconfig <interface name> <ip address> netmask 255.255.255.0
     
 </ol>
 
