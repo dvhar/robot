@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="cs4500_sp19-071b76">
+ <names>
+  <name lang="en_US">cs4500_sp19</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="fdance">
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">fdance</name>
+   </names>
+   <triggerSentences>
+    <sentence lang="en_US">Can you dance for the class Johnny?</sentence>
+   </triggerSentences>
+   <loadingResponses/>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[(('Launchpad/NumPeopleZone2' > 0) ~ 5) ]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="highfive">
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">highfive</name>
+   </names>
+   <triggerSentences>
+    <sentence lang="en_US">High five</sentence>
+   </triggerSentences>
+   <loadingResponses/>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[((‘Launchpad/NumPeopleZone2’ > 0) ~ 5) &&
+('Launchpad/PreviousActivity' != "cs4500_sp19-071b76/highfive")]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="nameandface">
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">nameandface</name>
+   </names>
+   <triggerSentences>
+    <sentence lang="en_US">Let’s get to know each other</sentence>
+    <sentence lang="en_US">Want to be friends?</sentence>
+   </triggerSentences>
+   <loadingResponses/>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/TrackedHumanIsLookingAtRobot' == True) ]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="recognize">
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">recognize</name>
+   </names>
+   <triggerSentences>
+    <sentence lang="en_US">Do you remember me?</sentence>
+   </triggerSentences>
+   <loadingResponses/>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/TrackedHumanIsLookingAtRobot' == True) && (‘Launchpad/PreviousActivity’ !=”cs4500_sp19-071b76/recognize”) ]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="robotdance">
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">robotdance</name>
+   </names>
+   <triggerSentences>
+    <sentence lang="en_US">Can you do the robot?</sentence>
+    <sentence lang="en_US">Do the robot</sentence>
+   </triggerSentences>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="forgetallfaces">
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">forgetallfaces</name>
+   </names>
+   <triggerSentences>
+    <sentence lang="en_US">It's time to forget, Johnny.</sentence>
+   </triggerSentences>
+   <loadingResponses/>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[(‘Launchpad/PreviousActivity’ !=”cs4500_sp19-071b76/forgetallfaces”) ]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
