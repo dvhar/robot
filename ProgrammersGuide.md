@@ -154,11 +154,11 @@ Activities are behaviors that your robot can perform when autonomous life mode i
   
 <li> Here you can enter a name and description for your behavior</li>
 <li> Click on the “Nature” drop-down box and select “Interactive”</li>
-<li> In the “Trigger sentences” field, you can enter a sentence and click “Add” to add a sphrase that you would like to speak to your robot to trigger this behavior provided the other launch trigger conditions are met</li>
+<li> In the “Trigger sentences” field, you can enter a sentence and click “Add” to add a phrase that you would like to speak to your robot to trigger this behavior provided the other launch trigger conditions are met</li>
 <li> In this example, we use the trigger sentence “It’s time to forget, Johnny.” to trigger the robot to unlearn all faces it has previously learned</li>
 <li> In the “Launch trigger condition” field, you can enter different conditions that must be met for your interactive activity to begin once your robot hears the trigger sentence entered in step 10</li>
 
-   -Note: The following link provides documentation that lists all launch trigger conditions and defines the Conditions expression language
+   -Note: The following link provides documentation that lists all launch trigger conditions and defines the Conditions Expression Language
        http://doc.aldebaran.com/2-1/naoqi/core/triggerconditions.html#launchtriggerconditions
 
 <li> For this example, we will use a simple launch trigger condition that will prevent this behavior from being launched multiple times below</li>
