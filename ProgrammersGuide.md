@@ -1,6 +1,6 @@
 # Nao Robot Programming Guide
 
-How to Turn Nao On:
+#### How to Turn Nao On:
 <ol>
 <li> Hold down the button on his chest for about 10 seconds. If he begins lighting up, and starts talking, he is on. If he doesn't, he may be dead. Try plugging his charger in, and try step one again.</li>
         *You should charge him for at least 90 minutes before using him. 
@@ -14,7 +14,7 @@ How to Turn Nao On:
 
 ___
     
-How to Connect Nao to Wifi:
+#### How to Connect Nao to Wifi:
 <ol>
        <li>After you login with his IP address, select one of the available WiFi networks.</li>
        <li>Complete the required parameters, and click the connect button.</li>
@@ -51,7 +51,7 @@ On Linux:
 
 ___
 
-How to Download Choregraphe:
+#### How to Download Choregraphe:
 <ol>
 <li> In order to download Choregraphe, Nao has to be registered.</li>
 <li> Go to http://doc.aldebaran.com/2-4/dev/community_software.html#retrieving-software</li>
@@ -64,7 +64,7 @@ How to Download Choregraphe:
 
 ___
 
-How to do a Basic Choregraphe project:
+#### How to do a Basic Choregraphe project:
 <ol>
 <li> Open your choregraphe application</li>
 <li> Click "New Project"</li>
@@ -107,7 +107,7 @@ How to do a Basic Choregraphe project:
 
 ___
 
-Useful links
+#### Useful links
 
 [Robo-phil youtube channel](https://www.youtube.com/user/robotphilip)
 
@@ -115,7 +115,7 @@ Useful links
 
 ___
 
-How to Create an Interactive Activity from your Basic Choregraphe project:
+#### How to Create an Interactive Activity from your Basic Choregraphe project:
 
 Activities are behaviors that your robot can perform when autonomous life mode is on and programmer defined trigger conditions have been met. Activities add interactivity to your robot and let it perform its behaviors in response to an event and without being connected to a computer running Choregraphe.
 
@@ -179,7 +179,7 @@ NOTE: You can usually tell if the robot is “listening” by looking into its e
 
 ___
 
-How to Make a Project (with multiple parts):
+#### How to Make a Project (with multiple parts):
 
 You can combine multiple single behavior projects into one application with multiple behaviors and upload it all at once to your robot. Having a single application like this can make it easier to manage and maintain each behavior by avoiding opening and closing a different project each time you want to want to access the behavior in it.
 
@@ -218,7 +218,7 @@ You can combine multiple single behavior projects into one application with mult
 
 ___
 
-How to Upload Projects onto Robot:
+#### How to Upload Projects onto Robot:
 
 <ol>
 <li> Open your Choregraphe application and connect to your physical robot (not the virtual robot)</li>
@@ -239,7 +239,7 @@ How to Upload Projects onto Robot:
 <li> Your robot can now perform all behaviors in your application when autonomous life mode is on and without being connected to a computer running Choregraphe</li>
 </ol>
 
-Removing an Application from the Robot
+#### Removing an Application from the Robot
 
 <ol>
 <li> Right click on the name of the application you want to remove and select “Remove from the robot...”</li>
@@ -253,7 +253,7 @@ Removing an Application from the Robot
 <li> The application you selected has now been removed from your robot, which you can confirm by scrolling through the “Robot Applications” windows</li>
 </ol>
 
-Default States of Behaviors
+#### Default States of Behaviors
 
 <ol>
 <li> Right click on any behavior listed below an application in the “Robot Application” box</li>
@@ -267,7 +267,7 @@ Default States of Behaviors
 
 </ol>
 
-Testing Applications Already Installed on your Robot
+#### Testing Applications Already Installed on your Robot
 
 <ol>
 <li> A green “play” icon is listed to the right of each behavior in each application uploaded to your robot</li>
@@ -279,7 +279,7 @@ Testing Applications Already Installed on your Robot
 
 ___
 
-Run our Application
+#### Run our Application
 
 You will receive this robot with our application and its 6 behaviors already installed. If you would like to go through the process of installing our application and demonstrating each behavior, follow the instructions below.
 
@@ -302,7 +302,7 @@ You will receive this robot with our application and its 6 behaviors already ins
 
 </ol>
 
-Demonstrating Each Behavior
+#### Demonstrating Each Behavior
 
 <ol>
 <li> Disconnect your robot from your computer by clicking the red “Disconnect” antenna icon located next to the green ”Connect” antenna icon</li>
