@@ -127,7 +127,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <li> Choose a descriptive name for your behavior and enter it into the dialog box</li>
        
 <br>
-<img src="pics/name_behavior.jpg" align="middle"/>
+<img src="pics/name_behavior_cropped.jpg" align="middle"/>
 
 <br>
 <br>   
@@ -137,7 +137,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 
 <br>
 
-<img src="pics/proj_prop.jpg" align="middle"/>
+<img src="pics/proj_prop_cropped.jpg" align="middle"/>
 
 <br>
 <br>
@@ -146,7 +146,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
    
 <br>
     
-<img src="pics/behave_prop.jpg" align="middle"/>
+<img src="pics/behave_prop_cropped.jpg" align="middle"/>
   
 <br>
 <br>
@@ -181,7 +181,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 
 <br>
 
-<img src="pics/autonomous_life.jpg" align="middle"/>
+<img src="pics/autonomous_life_cropped.jpg" align="middle"/>
 
 <br>
 <br>
@@ -212,7 +212,7 @@ You can combine multiple single behavior projects into one application with mult
   
 <br>
      
-<img src="pics/import_folder.jpg" align="middle"/>
+<img src="pics/import_folder_cropped.jpg" align="middle"/>
    
 <br>
 <br>
@@ -225,7 +225,7 @@ You can combine multiple single behavior projects into one application with mult
 
 <br>
 
-<img src="pics/after_import.jpg" align="middle"/>
+<img src="pics/after_import_cropped.jpg" align="middle"/>
 
 <br>
 <br>
@@ -257,7 +257,7 @@ ___
       
 <br>
  
-<img src="pics/install_to_robot.jpg" align="middle"/>
+<img src="pics/install_to_robot_cropped.jpg" align="middle"/>
    
 <br>
 <br>
@@ -281,7 +281,7 @@ ___
    
 <br>
     
-<img src="pics/remove_application.jpg" align="middle"/>
+<img src="pics/remove_application_cropped.jpg" align="middle"/>
   
 <br>
 <br>
@@ -302,7 +302,7 @@ All behaviors set as default will be run automatically when your robot is turned
    
 <br>
     
-<img src="pics/toggle_def_state.jpg" align="middle"/>
+<img src="pics/toggle_def_state_cropped.jpg" align="middle"/>
      
 <br>
 <br>
@@ -336,7 +336,7 @@ You will receive this robot with our application and its 6 behaviors already ins
        
 <br>
 
-<img src="pics/connect.jpg" align="middle"/>
+<img src="pics/connect_cropped.jpg" align="middle"/>
        
 <br>
 <br>
@@ -349,7 +349,7 @@ You will receive this robot with our application and its 6 behaviors already ins
 
 <br>
 
-<img src="pics/final_app.jpg" align="middle"/>
+<img src="pics/final_app_cropped.jpg" align="middle"/>
 
 <br>
 <br>
