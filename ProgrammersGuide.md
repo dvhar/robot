@@ -140,6 +140,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <img src="pics/proj_prop.jpg" align="middle"/>
 
 <br>
+<br>
 
 <li> Copy and paste your “Application ID” and save in an external file</li>
 <li> In the “Select your package content” box, click on the behavior that you named in step 3</li>
@@ -149,7 +150,8 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <img src="pics/behave_prop.jpg" align="middle"/>
   
 <br>
-     
+<br>
+  
 <li> Here you can enter a name and description for your behavior</li>
 <li> Click on the “Nature” drop-down box and select “Interactive”</li>
 <li> In the “Trigger sentences” field, you can enter a sentence and click “Add” to add a sphrase that you would like to speak to your robot to trigger this behavior provided the other launch trigger conditions are met</li>
@@ -183,6 +185,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <img src="pics/autonomous_life.jpg" align="middle"/>
 
 <br>
+<br>
 
 <li> Click on this button to turn autonomous life mode on if it is not already on</li>
 <li> When your robot is listening, say the trigger sentence from step 10</li>
@@ -213,6 +216,7 @@ You can combine multiple single behavior projects into one application with mult
 <img src="pics/import_folder.jpg" align="middle"/>
    
 <br>
+<br>
     
 <li> Choose a parent folder containing a behavior from your file system and click “Select Folder” to import the behavior</li>
        
@@ -224,6 +228,7 @@ You can combine multiple single behavior projects into one application with mult
 
 <img src="pics/after_import.jpg" align="middle"/>
 
+<br>
 <br>
 
 <li> Click on the “Properties” button in the in the “Project content” window and update the “Application title” field with the name of your new project</li>
@@ -256,6 +261,7 @@ ___
 <img src="pics/install_to_robot.jpg" align="middle"/>
    
 <br>
+<br>
     
 <li> A pop up will appear that informs you that all of behavior files in the project are being transferred to the robot</li>
 <li> After this box disappears, your application will be saved on your robot</li>
@@ -279,6 +285,7 @@ ___
 <img src="pics/remove_application.jpg" align="middle"/>
   
 <br>
+<br>
      
 <li> Alternatively, click on the trash can button in the navigation bar of the “Robot Applications” box to remove the currently selected application</li>
 
@@ -296,6 +303,7 @@ ___
     
 <img src="pics/toggle_def_state.jpg" align="middle"/>
      
+<br>
 <br>
   
 <li> Alternatively, click on the checkered flag button in the navigation bar of the “Robot Applications” box to toggle the default state of the currently selected behavior</li>
@@ -333,6 +341,7 @@ You will receive this robot with our application and its 6 behaviors already ins
 <img src="pics/connect.jpg" align="middle"/>
        
 <br>
+<br>
 
 <li> Click “File” then “Open project...” and select the “cs4500_sp19.pml” from the location where you extracted the repository</li>
 <li> Remove the version of our application "cs4500_sp19 (6)" that is already installed</li>
@@ -344,6 +353,7 @@ You will receive this robot with our application and its 6 behaviors already ins
 
 <img src="pics/final_app.jpg" align="middle"/>
 
+<br>
 <br>
 
 </ol>
