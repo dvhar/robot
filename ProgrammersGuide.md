@@ -128,16 +128,25 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <img src="pics/name_behavior.jpg" align="middle"/>
 
 <br>   
+
 <li> Next click on the “Properties” button in the “Project content” box to display a window with options for your basic project and its single behavior</li>
 <li> Enter a descriptive name in the “Application title” field</li>
 
+<br>
+
 <img src="pics/proj_prop.jpg" align="middle"/>
+
+<br>
 
 <li> Copy and paste your “Application ID” and save in an external file</li>
 <li> In the “Select your package content” box, click on the behavior that you named in step 3</li>
-       
+   
+<br>
+    
 <img src="pics/behave_prop.jpg" align="middle"/>
-       
+  
+<br>
+     
 <li> Here you can enter a name and description for your behavior</li>
 <li> Click on the “Nature” drop-down box and select “Interactive”</li>
 <li> In the “Trigger sentences” field, you can enter a sentence and click “Add” to add a sphrase that you would like to speak to your robot to trigger this behavior provided the other launch trigger conditions are met</li>
@@ -166,7 +175,11 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 
 <li> Check the heart symbol in the top right corner of Choregraphe to see if “Autonomous Life’ mode is on for your robot</li>
 
+<br>
+
 <img src="pics/autonomous_life.jpg" align="middle"/>
+
+<br>
 
 <li> Click on this button to turn autonomous life mode on if it is not already on</li>
 <li> When your robot is listening, say the trigger sentence from step 10</li>
@@ -191,16 +204,24 @@ You can combine multiple single behavior projects into one application with mult
 <li> In the “Project content” box left click on the default behavior “behavior_1”</li>
 <li> Click on the trash can button to remove this behavior from the project</li>
 <li> Then click on the blue plus icon and select “Import folder...” from the drop-down menu</li>
-       
+  
+<br>
+     
 <img src="pics/import_folder.jpg" align="middle"/>
-       
+   
+<br>
+    
 <li> Choose a parent folder containing a behavior from your file system and click “Select Folder” to import the behavior</li>
        
    -Note: We are assuming here that you developed each behavior within its own project
        
 <li> Repeat steps 5 and 6 for each behavior you wish to add to this project and then check the file tree in the "Project content" box to ensure you have imported all of your behaviors</li>
 
+<br>
+
 <img src="pics/after_import.jpg" align="middle"/>
+
+<br>
 
 <li> Click on the “Properties” button in the in the “Project content” window and update the “Application title” field with the name of your new project</li>
 <li> Click the “OK” button in the bottom right corner of the window when you are finished editing your project’s name</li>
@@ -226,9 +247,13 @@ ___
 <li> Open your Choregraphe application and connect to your physical robot (not the virtual robot)</li>
 <li> Open the project that you wish to upload to your robot</li>
 <li> In the “Robot Applications” box on the right side of your screen click on the “Package and install current project to the robot” button</li>
-       
+      
+<br>
+ 
 <img src="pics/install_to_robot.jpg" align="middle"/>
-       
+   
+<br>
+    
 <li> A pop up will appear that informs you that all of behavior files in the project are being transferred to the robot</li>
 <li> After this box disappears, your application will be saved on your robot</li>
 
@@ -245,9 +270,13 @@ ___
 
 <ol>
 <li> Right click on the name of the application you want to remove and select “Remove from the robot...”</li>
-       
+   
+<br>
+    
 <img src="pics/remove_application.jpg" align="middle"/>
-       
+  
+<br>
+     
 <li> Alternatively, click on the trash can button in the navigation bar of the “Robot Applications” box to remove the currently selected application</li>
 
    -Note: The currently selected application in the “Robot Applications” box will be marked with a light gray or dark blue background.
@@ -259,9 +288,13 @@ ___
 
 <ol>
 <li> Right click on any behavior listed below an application in the “Robot Application” box</li>
-       
+   
+<br>
+    
 <img src="pics/toggle_def_state.jpg" align="middle"/>
-       
+     
+<br>
+  
 <li> Alternatively, click on the checkered flag button in the navigation bar of the “Robot Applications” box to toggle the default state of the currently selected behavior</li>
 <li> Click “Toggle default state” to change the default state of any behavior on your robot</li>
 
@@ -292,15 +325,23 @@ You will receive this robot with our application and its 6 behaviors already ins
 <li> Extract the contents of “robot-master.zip” into the desired directory</li>
 <li> Open your Choregraphe application and connect to your physical robot</li>
        
+<br>
+
 <img src="pics/connect.jpg" align="middle"/>
        
+<br>
+
 <li> Click “File” then “Open project...” and select the “cs4500_sp19.pml” from the location where you extracted the repository</li>
 <li> Remove the version of our application "cs4500_sp19 (6)" that is already installed</li>
 <li> Upload the project to your robot</li>
 <li> Confirm that the application “cs4500_sp19 (6)” is in your “Robot Applications” window</li>
 <li> Click the plus icon to the left of the application title to reveal the 6 interactive activities under the application</li>
 
+<br>
+
 <img src="pics/final_app.jpg" align="middle"/>
+
+<br>
 
 </ol>
 
