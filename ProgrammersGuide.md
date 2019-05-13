@@ -103,6 +103,8 @@ ___
 <li> Don't forget to save your project. Click file, then save project as...</li>
 </ol>
 
+<br>
+
 <img src="pics/hello.png" align="middle"/>
 
 ___
@@ -127,6 +129,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <br>
 <img src="pics/name_behavior.jpg" align="middle"/>
 
+<br>
 <br>   
 
 <li> Next click on the “Properties” button in the “Project content” box to display a window with options for your basic project and its single behavior</li>
