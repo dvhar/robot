@@ -293,7 +293,7 @@ You will receive this robot with our application and its 6 behaviors already ins
 <img src="pics/connect.jpg" align="middle"/>
        
 <li> Click “File” then “Open project...” and select the “cs4500_sp19.pml” from the location where you extracted the repository</li>
-<li> Remove the version of our application (cs4500_sp19 (6)) that is already installed</li>
+<li> Remove the version of our application "cs4500_sp19 (6)" that is already installed</li>
 <li> Upload the project to your robot</li>
 <li> Confirm that the application “cs4500_sp19 (6)” is in your “Robot Applications” window</li>
 <li> Click the plus icon to the left of the application title to reveal the 6 interactive activities under the application</li>
@@ -305,7 +305,7 @@ You will receive this robot with our application and its 6 behaviors already ins
 Demonstrating Each Behavior
 
 <ol>
-<li> Disconnect your robot from your computer by click the red “Disconnect” antenna icon located next to the green”Connect” antenna icon</li>
+<li> Disconnect your robot from your computer by clicking the red “Disconnect” antenna icon located next to the green ”Connect” antenna icon</li>
 
        Note: If you connected your robot to your computer with an ethernet cable you can disconnect this as well
 
