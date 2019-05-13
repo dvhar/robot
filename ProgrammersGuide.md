@@ -124,8 +124,10 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <li> Right click on the parent folder of the “behavior.xar” file and select “Rename...”</li>
 <li> Choose a descriptive name for your behavior and enter it into the dialog box</li>
        
+<br>
 <img src="pics/name_behavior.jpg" align="middle"/>
-       
+<br>   
+   
 <li> Next click on the “Properties” button in the “Project content” box to display a window with options for your basic project and its single behavior</li>
 <li> Enter a descriptive name in the “Application title” field</li>
 
