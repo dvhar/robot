@@ -142,7 +142,6 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <br>
 <br>
 
-<li> Copy and paste your “Application ID” and save in an external file</li>
 <li> In the “Select your package content” box, click on the behavior that you named in step 3</li>
    
 <br>
@@ -190,7 +189,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 <li> Click on this button to turn autonomous life mode on if it is not already on</li>
 <li> When your robot is listening, say the trigger sentence from step 10</li>
 
-NOTE: You can usually tell if the robot is “listening” by looking into its eyes. The color will be a darker blue than when it is at rest with autonomous life mode off, and there will be an animation where this darker blue is revolving around the center of the eye.
+   -Note: You can usually tell if the robot is “listening” by looking into its eyes. The color will be a darker blue than when it is at rest with autonomous life mode off, and there will be an animation where this darker blue is revolving around the center of the eye.
 
 <li> Watch as your robot performs the activity you created</li>
 
