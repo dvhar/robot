@@ -296,6 +296,8 @@ ___
 
 #### Default States of Behaviors
 
+All behaviors set as default will be run automatically when your robot is turned on. Behaviors currently set as default will have the blue checkered flag icon listed to their right.
+
 <ol>
 <li> Right click on any behavior listed below an application in the “Robot Application” box</li>
    
@@ -308,9 +310,6 @@ ___
   
 <li> Alternatively, click on the checkered flag button in the navigation bar of the “Robot Applications” box to toggle the default state of the currently selected behavior</li>
 <li> Click “Toggle default state” to change the default state of any behavior on your robot</li>
-
-   -Note: All behaviors set as default will be run automatically when your robot is turned on. Behaviors currently set as default will have the blue checkered flag icon listed to their right.
-
 </ol>
 
 #### Testing Applications Already Installed on your Robot
