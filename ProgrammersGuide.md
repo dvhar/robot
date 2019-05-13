@@ -126,8 +126,8 @@ Activities are behaviors that your robot can perform when autonomous life mode i
        
 <br>
 <img src="pics/name_behavior.jpg" align="middle"/>
+
 <br>   
-   
 <li> Next click on the “Properties” button in the “Project content” box to display a window with options for your basic project and its single behavior</li>
 <li> Enter a descriptive name in the “Application title” field</li>
 
