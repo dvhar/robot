@@ -164,7 +164,7 @@ Activities are behaviors that your robot can perform when autonomous life mode i
 
        (‘Launchpad/PreviousActivity’ !=”<application_id>/<behavior_name>”)
 
-<li> Replace <application_id> and <behavior_name> with the application ID you copied in step 6 and the behavior name chosen in step 3</li>
+<li> Replace "application_id" and "behavior_name" (including the surrounding brackets) with the application ID you copied in step 6 and the behavior name you chose in step 3</li>
 
        (‘Launchpad/PreviousActivity’ !=”unlearnallfaces-85cde8/forgetallfaces”)
 
